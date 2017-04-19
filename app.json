@@ -1,0 +1,7 @@
+{
+  "name": "Rails5 app demo",
+  "description": "Rails 5 minimal app based on Zero To Up tutorial.",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}

@@ -248,3 +248,9 @@ Logs:
 2017-04-19T23:25:50.848765+00:00 app[web.1]:
 2017-04-19T23:25:50.925798+00:00 heroku[web.1]: Process exited with status 0
 2017-04-19T23:25:50.940998+00:00 heroku[web.1]: State changed from starting to crashed
+
+#--------------
+Add Heroku Profile, app.json per https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
+
+# web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}
+web: bundle exec puma -C config/puma.rb
